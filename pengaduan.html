@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GreenShield</title>
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="css/bootstrap.css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+  <!-- Owl Carousel CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+
+  <!-- Nice Select CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css"
+    integrity="sha256-mLBIhmBvigTFWPSCtvdu6a76T+3Xyt+K571hupeFLg4=" crossorigin="anonymous" />
+
+  <!-- Datepicker CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker.css">
+
+  <!-- Custom Styles -->
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/responsive.css" rel="stylesheet">
+</head>
+
+<body class="sub_page">
+
+  <!-- Header Section -->
+  <header class="header_section">
+    <div class="header_bottom">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/logo.png" alt="GreenShield Logo">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Beranda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="berita.html">Berita</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">Tentang Kami</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pengaduan.html">Pengaduan</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="hasil.html">Lacak Isu</a>
+              </li>
+            </ul>
+            <div class="quote_btn-container">
+              <a href="admin/index.html">
+                <i class="fa fa-user" aria-hidden="true"></i>
+                <span>Login</span>
+              </a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <!-- End Header Section -->
+
+  <main>
+    <section class="complaint-form">
+      <div class="container">
+        <h1>Pengaduan</h1>
+        <p>Gunakan bahasa Indonesia yang baik dan santun. Identitas diri Anda kami jamin aman.</p>
+        <form action="/php/pengaduan.php" method="post" enctype="multipart/form-data">
+          <div class="form-group">
+            <label for="nama">Nama</label>
+            <input type="text" class="form-control" id="nama" name="nama" placeholder="Masukkan nama lengkap sesuai KTP"
+              required>
+          </div>
+          <div class="form-group">
+            <label for="no_hp">No. HP</label>
+            <input type="text" class="form-control" id="no_hp" name="no_hp" placeholder="No. HP" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
+          </div>
+          <div class="form-group">
+            <label for="pihak_terduga">Pihak Terduga</label>
+            <input type="text" class="form-control" id="pihak_terduga" name="pihak_terduga"
+              placeholder="Siapa yang ingin Anda laporkan?" required>
+          </div>
+          <div class="form-group">
+            <label for="masalah">Masalah</label>
+            <textarea class="form-control" id="masalah" name="masalah" rows="3" placeholder="Masalah" required></textarea>
+          </div>
+          <div class="form-group">
+            <label for="file">Foto Kejadian</label>
+            <input type="file" class="form-control-file" id="file" name="file" accept=".png, .jpg, .jpeg" required>
+            <small class="form-text text-muted">Maksimal Ukuran Berkas: 15 MB</small>
+          </div>
+          <div class="form-group">
+            <div class="recaptcha">
+              <!-- Masukkan script recaptcha Anda di sini -->
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary">Lapor</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="complaints-list">
+      <div class="container">
+        <h2>Pelapor (31)</h2>
+        <ul>
+          <li>
+            <strong>Gunawan Wibisono</strong><br>
+            Sampah pondok oleh santri pondok dibuang dan ditumpuk lalu dibakar
+            <span>1 hari yang lalu</span>
+          </li>
+          <li>
+            <strong>Ahmad Fauzi</strong><br>
+            Setiap membakar sampah disebelah rumah, polusi udara ditimbulkan, kadang asap sampai pagi tidak hilang, anggota
+            keluarga sering sesak nafas.
+            <span>3 hari yang lalu</span>
+          </li>
+          <li>
+            <strong>Handry</strong><br>
+            Semak-semak bambu yang ditebang kealam lahan saya tanpa ijin dengan cara memotong pagar.
+            <span>sebulan yang lalu</span>
+          </li>
+          <li>
+            <strong>Rahman</strong><br>
+            Penutupan saluran pembuangan air tanpa ijin
+            <span>sebulan yang lalu</span>
+          </li>
+          <li>
+            <strong>Beley Andre Yohanes Wuntu</strong><br>
+            ...
+            <span>sebulan yang lalu</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="footer_section">
+    <div class="container">
+      <h4>Kontak Kami</h4>
+      <div class="info_contact">
+        <a href="https://wa.me/6285226303594">
+          <i class="fa fa-phone" aria-hidden="true"></i>
+          <span>0852-2630-3594</span>
+        </a>
+        <br>
+        <a href="mailto:C624-PS112@dicoding.org">
+          <i class="fa fa-envelope"></i>
+          <span>C624-PS112@dicoding.org</span>
+        </a>
+      </div>
+      <p>&copy; <span id="displayYear"></span> GreenShield. All Rights Reserved By Team C624-PS112.</p>
+    </div>
+  </footer>
+  <!-- End Footer Section -->
+
+  <!-- Scripts -->
+  <!-- jQuery -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="js/bootstrap.js"></script>
+  <!-- nice select -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"
+    integrity="sha256-Zr3vByTlMGQhvMfgkQ5BtWRSKBGa2QlspKYJnkjZTmo=" crossorigin="anonymous"></script>
+  <!-- owl slider -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <!-- datepicker -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"></script>
+  <!-- custom js -->
+  <script src="js/custom.js"></script>
+
+
+</body>
+
+</html>
